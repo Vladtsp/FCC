@@ -1,0 +1,14 @@
+
+let array=[];
+function largestOfFour(arr) {
+  
+  for (var i=0; i<4; i++){
+    arr[i].sort(function(a, b){
+      return (b-a);
+      
+    });
+  array.push(arr[i][0]);
+  }
+  return array;
+}
+

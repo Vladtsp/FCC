@@ -1,0 +1,15 @@
+function titleCase(str) {
+  let str2=str.toLowerCase()
+  let arr=str2.split(" ")
+  let new_str=""
+  let new_str2=[]
+  
+  
+  for (var i=0;i<arr.length;i++){
+    new_str=arr[i][0].toUpperCase()+arr[i].slice(1)
+    new_str2=new_str2.concat(new_str)
+  }
+  return new_str2.join(" ");
+}
+
+console.log(titleCase("Yo NAAAB jsSS"))

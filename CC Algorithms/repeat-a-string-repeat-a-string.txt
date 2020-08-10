@@ -1,0 +1,11 @@
+
+function repeatStringNumTimes(str, num) {
+  let ans ="";
+  for (var i=0; i<num; i++){
+   ans=ans.concat(str);
+    
+  }
+  return ans;
+}
+
+console.log(repeatStringNumTimes("abc", 3));

@@ -1,0 +1,19 @@
+
+function confirmEnding(str, target) {
+  var counter=0;
+  let str_arr = str.split("");
+  let target_arr = target.split("");
+
+  for (var i=0; i<target.length; i++){
+     if (str_arr[str.length-(target.length-i)]==target_arr[i]){
+       counter+=1;
+     }
+     
+  }
+  if (counter==target.length){
+    return true;
+    }
+  return false;
+}
+
+

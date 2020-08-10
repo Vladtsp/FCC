@@ -1,0 +1,11 @@
+function frankenSplice(arr1, arr2, n) {
+  let nr1=arr1;
+  let nr2=arr2.slice(0, n)
+  let nr3=arr2.slice(n, arr2.length)
+  let nr4=nr2.concat(nr1)
+  let nr5=nr4.concat(nr3)
+  return nr5
+
+}
+
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
