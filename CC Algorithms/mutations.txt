@@ -1,0 +1,15 @@
+function mutation(arr) {
+  arr=arr.map(v => v.toLowerCase())
+  let letters = arr[1].split("")
+  let answer=true
+  for (var i=0;i<letters.length;i++){
+   if (answer != arr[0].includes(arr[1][i])){
+     return false
+   }
+
+  }
+  console.log(letters)
+  return true;
+}
+
+mutation(["hello", "hey"]);
